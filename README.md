@@ -1,4 +1,4 @@
-- 👋 Hi, I’m @RockRoque and am currently a UX Developer and am looking to broaden my skillset into big data
+- 👋 Hi, I’m @RockRoque and am currently a UX Designer & Developer and am looking to stregthen my design work while broadening my skillset into big data. I want to design and build applications that people use to improve their lives and work
 - 👀 I’m interested in solving complex problems with data that help people
 - 🌱 I’m currently learning more about systems level design architecture, databases, and all things data
 - 💞️ I’m looking to collaborate on a data visualization project that captures food insecurity data accross the United States 
