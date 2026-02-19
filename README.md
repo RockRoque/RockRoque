@@ -7,7 +7,6 @@ As a UX/UI Designer and Developer, I bring a unique combination of technical exp
 *   🌍  I'm based in Washington, D.C.
 *   ✉️  You can contact me at [rockaroque@gmail.com](mailto:rockaroque@gmail.com)
 *   🧠  I’m currently learning more about systems level design architecture, databases, AWS, AI, Deep Learning, and design -- always
-*   🤝  I'm open to collaborating on a data visualization project that captures food insecurity data across the United States from the USDA (https://www.ers.usda.gov/publications/pub-details/?pubid=104662) and displays how adding grocery stores in food insecure area, can increase overall health and wellness of the population in a given geographic region, delineated demographically.
 *   ⚡  I love to teach 🙌 , learn👂, ski ⛷, and white water paddle board 🏄‍♂️
 
 
