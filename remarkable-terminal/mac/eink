@@ -1,0 +1,35 @@
+#!/bin/sh
+# Local helper for the Mac keyboard side of the setup.
+#
+#   eink            attach this terminal window to the shared session
+#   eink status     show which clients (Mac window, tablet) are attached
+#   eink kill       end the shared session
+#
+# Anything you type here shows up on the reMarkable because both attach to
+# the same tmux session.
+PATH="/opt/homebrew/bin:/usr/local/bin:/opt/local/bin:$HOME/.local/bin:$PATH"
+export PATH
+
+CONF="$HOME/.config/remarkable-terminal"
+SESSION="${EINK_SESSION:-eink}"
+
+case "${1:-attach}" in
+  attach)
+    exec tmux -f "$CONF/tmux-eink.conf" new-session -A -s "$SESSION"
+    ;;
+  status)
+    if tmux has-session -t "$SESSION" 2>/dev/null; then
+      echo "session '$SESSION' is running; attached clients:"
+      tmux list-clients -t "$SESSION"
+    else
+      echo "session '$SESSION' is not running"
+    fi
+    ;;
+  kill)
+    tmux kill-session -t "$SESSION"
+    ;;
+  *)
+    echo "usage: eink [attach|status|kill]" >&2
+    exit 2
+    ;;
+esac

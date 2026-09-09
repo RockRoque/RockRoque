@@ -1,0 +1,26 @@
+# Suggested yaft settings for use as a display for a Mac tmux session.
+# yaft writes a default file to /home/root/.config/yaft/config.toml on first
+# launch; setup-remarkable.sh copies this one only if none exists yet.
+# Keys come from the yaft README (timower/rM2-stuff, apps/yaft).
+
+# Virtual (on-screen) keyboard layout.
+layout = "qwerty"
+
+# Physical keyboard mapping. "rm-qwerty" is the Type Folio; use "qwerty"
+# for a plain USB keyboard.
+keymap = "rm-qwerty"
+
+# Rotate to landscape automatically when the Type Folio is attached.
+auto-rotate = true
+
+# Fixed orientation when auto-rotate does not apply:
+# none | clockwise | inverted | counterclockwise
+rotation = "none"
+
+# Full e-ink refresh every N screen updates. Lower = less ghosting, more
+# flashing. 0 disables. Default is 1024; 256 suits scrolling text.
+auto-refresh = 256
+
+# Key repeat for physical keyboards (ms, chars per second).
+repeat-delay = 600
+repeat-rate = 25
